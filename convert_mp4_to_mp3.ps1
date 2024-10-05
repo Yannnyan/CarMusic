@@ -4,6 +4,6 @@ $mp4_files = (Get-ChildItem -Path $MP4_PATH | Where-Object {$_.Name -like '*`.mp
 foreach ($mp4_file in $mp4_files)
 {
     $full_path = (Join-Path -Path $MP4_PATH -ChildPath $mp4_file)
-    ffmpeg.exe -i $full_path -vn (Join-Path -Path $MP4_PATH -ChildPath ($mp4_file.split('.')[0] + '.mp3'))
+    ffmpeg.exe -i $full_path -y -threads 0 -vn (Join-Path -Path $MP4_PATH -ChildPath ($mp4_file.split('.')[0] + '.mp3'))
     Remove-Item -Path $full_path
 }
