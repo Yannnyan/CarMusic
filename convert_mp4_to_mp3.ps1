@@ -1,4 +1,4 @@
-$MP4_PATH = 'E:\mp3'
+$MP4_PATH = If ($null -ne $Env:DOWNLOAD_DESTINATION) {$Env:DOWNLOAD_DESTINATION} Else {'E:\mp3'}
 
 $mp4_files = (Get-ChildItem -Path $MP4_PATH | Where-Object {$_.Name -like '*`.mp4'}).Name
 foreach ($mp4_file in $mp4_files)
