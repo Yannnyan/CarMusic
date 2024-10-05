@@ -1,10 +1,8 @@
 from pytubefix import Playlist, exceptions
 from Database.database import check_song_exist, insert_song
 import subprocess, sys
+from env import *
 
-YOUTUBE_STREAM_AUDIO = '140'
-DOWNLOAD_DESTINATION = r'E:\mp3'
-CONVERT_SCRIPT_PATH = r'C:\Users\Yan\Desktop\Music\Download-Music\convert_mp4_to_mp3.ps1'
 
 with open("playlists.txt") as f_playlist_urls:
     l_playlist_urls = f_playlist_urls.readlines()
