@@ -1,6 +1,6 @@
 import os
 import threading
-from download import DownloadProcess
+from download import DownloadThread
 from tkinter import Frame, Tk, ttk, filedialog, Text, Scrollbar
 from tkinter.scrolledtext import ScrolledText
 import socket
@@ -40,7 +40,7 @@ class MainWindow(Tk):
         self.l_playlists = None
         self.download_finished = False
         self.downloads_path = None
-        self.download_process: DownloadProcess = None
+        self.download_process: DownloadThread = None
         self.logging_thread = threading.Thread(target=self.listen_logs,daemon=True)
         self.logging_thread.start()
         self.log_port = None
@@ -62,12 +62,12 @@ class MainWindow(Tk):
             return
         if (self.download_process is not None) and (not self.download_finished):
             return
-        self.download_process = DownloadProcess(l_playlist_urls=self.l_playlists, downloads_path=self.downloads_path, server_port=self.log_port)
+        self.download_process = DownloadThread(l_playlist_urls=self.l_playlists, downloads_path=self.downloads_path, server_port=self.log_port)
         self.download_process.start()
 
 
     def cancel(self):
-        self.download_process.terminate()
+        self.download_process.stop = True
         self.download_finished = True
         self.download_process = None
 
@@ -87,5 +87,3 @@ class MainWindow(Tk):
 if __name__ == '__main__':
     root = MainWindow()
     root.mainloop()
-
-
