@@ -83,7 +83,3 @@ class MainWindow(Tk):
             self.downloads_path = path
             self.view_downloads["text"] = path
 
-
-if __name__ == '__main__':
-    root = MainWindow()
-    root.mainloop()

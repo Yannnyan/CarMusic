@@ -17,7 +17,6 @@ class Cardb:
     def check_tables_exist(self) -> bool:
         res = self.cur.execute("SELECT name FROM sqlite_master")
         tables = res.fetchall()
-        print(tables)
         return ('song',) in tables and ('songincar',) in tables
 
     def insert_song(self,video: YouTube, url: str, in_car: bool):

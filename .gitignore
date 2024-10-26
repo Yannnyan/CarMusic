@@ -1,0 +1,7 @@
+dist
+build
+Downloads
+.vscode
+__pycache__
+*.db
+.venv
