@@ -4,6 +4,7 @@ import subprocess, sys
 from config.env import *
 import threading
 import socket
+from sys import exit
 
 class DownloadThread(threading.Thread):
     def __init__(self, l_playlist_urls, downloads_path, server_port: int):
