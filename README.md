@@ -38,7 +38,7 @@
 
   <p align="center">
     This project implements a downloader. 
-    Using a robust approach. Amphasizing on DevSecOps with a proactive approach integrating secure pipelines to mitigate risks. Approaching best practices for security. Implementing various platforms for testing and reducing threats in software. Involving Software Component Analysis, Static Code Analysis,  Dynamic Code Analysis, Sophisticated Logging mechanisms, and Secure Error Handling.
+    Using a robust approach. Emphasizing on DevSecOps with a proactive approach integrating secure pipelines to mitigate risks. Approaching best practices for security. Implementing various platforms for testing and reducing threats in software. Involving Software Component Analysis, Static Code Analysis,  Dynamic Code Analysis, Sophisticated Logging mechanisms, and Secure Error Handling.
     <br />
     <a href="https://github.com/Yannnyan/CarMusic"><strong>Explore the docs »</strong></a>
     <br />
