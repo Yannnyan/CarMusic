@@ -10,11 +10,11 @@ pefile==2024.8.26
 platformdirs==4.3.6
 py2exe>=0.12.0.2
 pyasn1==0.6.1
-pyinstaller==6.10.0
-pyinstaller-hooks-contrib==2024.8
+pyinstaller==6.11.0
+pyinstaller-hooks-contrib==2024.9
 pylint==3.3.1
-PySimpleGUI==5.0.6
-pytubefix==7.3.1
+PySimpleGUI==5.0.7
+pytubefix==8.1.1
 pywin32-ctypes==0.2.3
 rsa==4.9
 tomli==2.0.2
