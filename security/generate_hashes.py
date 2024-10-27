@@ -2,7 +2,6 @@
  This module is essential for file integrity and security
  Beware it overrides the last file
 """
-from hashlib import sha256
 from pathlib import Path
 import json
 from config.cfg import enc_module, hash_algo
