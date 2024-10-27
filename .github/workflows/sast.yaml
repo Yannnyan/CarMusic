@@ -46,4 +46,4 @@ jobs:
     
     - name: Run analysis
       run: |
-        python -m bandit (git ls-files)
+        python -m bandit $(git ls-files)
