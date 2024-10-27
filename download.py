@@ -9,7 +9,7 @@ import socket
 # pylint: disable-next=redefined-builtin
 from sys import exit
 from pytubefix import Playlist, exceptions
-from Database.database import Cardb
+from database.database import Cardb
 from config.env import CONVERT_SCRIPT_PATH
 
 class DownloadThread(threading.Thread):

@@ -1,9 +1,10 @@
+""" Defines database with sqlite to not download unnecessary files """
+import uuid
 import sqlite3
 from pytubefix import YouTube
-import uuid
 
 class Cardb:
-    
+    """ Car database data access layer """
     def __init__(self) -> None:
         self.con = sqlite3.connect('carmusic.db')
         self.cur = self.con.cursor()
@@ -11,15 +12,18 @@ class Cardb:
             self.create_tables()
 
     def create_tables(self):
+        """ Creates tables """
         self.cur.execute("CREATE TABLE song(id,title,author,description,likes,views,rating,url)")
         self.cur.execute("CREATE TABLE songincar(id,songId)")
 
     def check_tables_exist(self) -> bool:
+        """ Check tables exists """
         res = self.cur.execute("SELECT name FROM sqlite_master")
         tables = res.fetchall()
         return ('song',) in tables and ('songincar',) in tables
 
     def insert_song(self,video: YouTube, url: str, in_car: bool):
+        """ Insert song metadata """
         data = (
             str(uuid.uuid4()),
             video.title,
@@ -40,6 +44,7 @@ class Cardb:
         self.con.commit()
 
     def check_song_exist(self,video: YouTube) -> bool:
+        """ Check song exist in db """
         res = self.cur.execute("""
                             SELECT * FROM songincar 
                             INNER JOIN song on songincar.songId = song.id
