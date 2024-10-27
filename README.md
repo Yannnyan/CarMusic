@@ -30,23 +30,24 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/Yannnyan/CarMusic">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Car Music</h3>
 
   <p align="center">
-    project_description
+    This project implements a downloader. 
+    Using a robust approach. Amphasizing on DevSecOps with a proactive approach integrating secure pipelines to mitigate risks. Approaching best practices for security. Implementing various platforms for testing and reducing threats in software. Involving Software Component Analysis, Static Code Analysis,  Dynamic Code Analysis, Sophisticated Logging mechanisms, and Secure Error Handling.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Yannnyan/CarMusic"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/Yannnyan/CarMusic">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/Yannnyan/CarMusic/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/Yannnyan/CarMusic/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -122,25 +123,19 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
-
+1. Download the zip from the latest tag and extract it (current - alpha pre release)
+``` ps1
+    curl -LO https://github.com/Yannnyan/CarMusic/releases/download/alpha/build.zip
+    Expand-Archive build.zip
+```
+2. Run the installer by double clicking or ps1 script
+``` ps1
+    ./build/installer.ps1
+```
+3. The program should pop when installation is finished
+``` ps1
+    program.lnk
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -164,7 +159,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Feature 3
     - [ ] Nested Feature
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Yannnyan/CarMusic/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -188,8 +183,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
+<a href="https://github.com/Yannnyan/CarMusic/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Yannnyan/CarMusic" alt="contrib.rocks image" />
 </a>
 
 
@@ -197,7 +192,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the Creative Commons Zero v1.0 Universal. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,7 +203,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/Yannnyan/CarMusic](https://github.com/Yannnyan/CarMusic)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -227,16 +222,16 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Yannnyan/CarMusic.svg?style=for-the-badge
+[contributors-url]: https://github.com/Yannnyan/CarMusic/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Yannnyan/CarMusic.svg?style=for-the-badge
+[forks-url]: https://github.com/Yannnyan/CarMusic/network/members
+[stars-shield]: https://img.shields.io/github/stars/Yannnyan/CarMusic.svg?style=for-the-badge
+[stars-url]: https://github.com/Yannnyan/CarMusic/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Yannnyan/CarMusic.svg?style=for-the-badge
+[issues-url]: https://github.com/Yannnyan/CarMusic/issues
+[license-shield]: https://img.shields.io/github/license/Yannnyan/CarMusic.svg?style=for-the-badge
+[license-url]: https://github.com/Yannnyan/CarMusic/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
