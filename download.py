@@ -2,15 +2,19 @@
     This module defines the thread that performs the actual
     functionality of the package, it downloads playlists
 """
-import subprocess
+import subprocess # nosec
 import sys
 import threading
 import socket
+import os
+from pathlib import Path
+import json
 # pylint: disable-next=redefined-builtin
 from sys import exit
 from pytubefix import Playlist, exceptions
 from database.database import Cardb
 from config.env import CONVERT_SCRIPT_PATH
+from config.cfg import hash_algo, enc_module
 
 class DownloadThread(threading.Thread):
     """
@@ -24,6 +28,12 @@ class DownloadThread(threading.Thread):
         self.stop = False
 
         self.download_destination = downloads_path
+        self.hashes: list|None = None
+        try:
+            with open(r'security\hashes.json', 'r') as r_file:
+                self.hashes = json.load(r_file)
+        except FileNotFoundError:
+            self._send("Not Found the hashes file!")
 
     def _send(self, format_message: str):
         self.connection.send(format_message.encode("utf-8"))
@@ -54,8 +64,23 @@ class DownloadThread(threading.Thread):
 
     def convert_to_mp3(self):
         """ Used for file format conversion """
-        # Convert mp4 files to mp3 format
-        with subprocess.Popen(["powershell.exe",
-                            CONVERT_SCRIPT_PATH],
-                            stdout=sys.stdout) as p:
-            p.communicate()
+        # Check we are executing the CORRECT powershell file
+        exe_path = str(Path(os.environ.get("windir"),
+                                r"System32\WindowsPowerShell\v1.0",
+                                "powershell.exe"))
+        try:
+            with open(exe_path,'r') as exe_fp:
+                exe_content_coded = enc_module.encode(exe_fp.read())
+                exe_hash = hash_algo(exe_content_coded).hexdigest()
+                if exe_hash not in self.hashes:
+                    self._send("Corrupted Powershell file for converting mp4 to mp3.\
+                                Try redownloading and reinstalling")
+                    return
+                # Convert mp4 files to mp3 format
+                with subprocess.Popen([exe_path,
+                                    CONVERT_SCRIPT_PATH],
+                                    stdout=sys.stdout,
+                                    ) as p: # nosec
+                    p.communicate()
+        except FileNotFoundError:
+            self._send("Not Found Necessary Script!")
