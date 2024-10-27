@@ -3,7 +3,7 @@ name: "SAST bandit"
 on:
   push:
     branches: ["main"]
-  pull_requests:
+  pull_request:
     branches: ["main"]
   schedule:
     - cron: '19 16 * * 6'
