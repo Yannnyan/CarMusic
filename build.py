@@ -2,7 +2,7 @@
 from pathlib import Path
 import shutil
 import os
-from py2exe import freeze
+from pyinstaller import freeze
 
 CUR_DIR = Path(__file__).parent
 DEVOPS_DIR = '.devops'

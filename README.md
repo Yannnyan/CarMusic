@@ -30,9 +30,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Yannnyan/CarMusic">
+  <!-- <a href="https://github.com/Yannnyan/CarMusic">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  </a> -->
 
 <h3 align="center">Car Music</h3>
 
@@ -40,10 +40,10 @@
     This project implements a downloader. 
     Using a robust approach. Emphasizing on DevSecOps with a proactive approach integrating secure pipelines to mitigate risks. Approaching best practices for security. Implementing various platforms for testing and reducing threats in software. Involving Software Component Analysis, Static Code Analysis,  Dynamic Code Analysis, Sophisticated Logging mechanisms, and Secure Error Handling.
     <br />
-    <a href="https://github.com/Yannnyan/CarMusic"><strong>Explore the docs »</strong></a>
+    <!-- <a href="https://github.com/Yannnyan/CarMusic"><strong>Explore the docs »</strong></a>
+    <br /> -->
     <br />
-    <br />
-    <a href="https://github.com/Yannnyan/CarMusic">View Demo</a>
+    <!-- <a href="https://github.com/Yannnyan/CarMusic">View Demo</a> -->
     ·
     <a href="https://github.com/Yannnyan/CarMusic/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
@@ -84,9 +84,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+(![Downloader screen shot](image.png))
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,14 +93,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+![Python][Python-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,14 +105,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 
@@ -142,10 +127,10 @@ This is an example of how to list things you need to use the software and how to
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
+<!-- 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,11 +138,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- ROADMAP -->
 ## Roadmap
-
+<!-- 
 - [ ] Feature 1
 - [ ] Feature 2
 - [ ] Feature 3
-    - [ ] Nested Feature
+    - [ ] Nested Feature -->
 
 See the [open issues](https://github.com/Yannnyan/CarMusic/issues) for a full list of proposed features (and known issues).
 
@@ -199,22 +184,22 @@ Distributed under the Creative Commons Zero v1.0 Universal. See `LICENSE.txt` fo
 
 
 <!-- CONTACT -->
-## Contact
+<!-- ## Contact
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
 Project Link: [https://github.com/Yannnyan/CarMusic](https://github.com/Yannnyan/CarMusic)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+ -->
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
+<!-- ## Acknowledgments -->
+<!-- 
 * []()
 * []()
-* []()
+* []() -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -251,3 +236,4 @@ Project Link: [https://github.com/Yannnyan/CarMusic](https://github.com/Yannnyan
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Python-url]: https://www.python.org/static/img/python-logo-large.c36dccadd999.png?1646853871

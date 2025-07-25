@@ -13,8 +13,8 @@ import json
 from sys import exit
 from pytubefix import Playlist, exceptions
 from database.database import Cardb
-from config.env import CONVERT_SCRIPT_PATH
-from config.cfg import hash_algo, enc_module
+from config.cfg import CONVERT_SCRIPT_PATH
+from config.cfg import HASH_ALGO as hash_algo, ENC_MODULE as enc_module
 
 class DownloadThread(threading.Thread):
     """
